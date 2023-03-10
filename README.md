@@ -1,12 +1,9 @@
 # DB_Project1
 Project 1 for Databases class
 
-Run setup.sql on start to create and insert data into tables
-setup.sql runs createTables.sql which makes our tables, then calls imports
+Run setup.sql to initialize and read data into tables
 
-running finish.sql runs writeTables.sql and dropTables.sql
-writeTables.sql writes our tables back to csv
-dropTables.sql drops all our tables
+Running finish.sql writes tables to their respective csv files and drops all tables
 
 Files were shared via GitHub
 This zip file is probably just a zip of the repository
@@ -15,10 +12,10 @@ We read data from csv files included in this zip file
 
 Contributions
 
-ER Diagram Christian Brown
-Load Data Christian Brown
-Readme Christian Brown
-CREATE Christian Brown
+ER Diagram Christian Brown,
+Load Data Christian Brown,
+Readme Christian Brown,
+CREATE Christian Brown,
 SELECT Sazzadul Islam
 
 Both members contributed a fair amount
