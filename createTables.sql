@@ -1,7 +1,7 @@
 CREATE TABLE Train
 (
-    Train_Name VARCHAR(64),
     Train_Number INT PRIMARY KEY,
+    Train_Name VARCHAR(64),
     Premium_Fare INT,
     General_Fare INT,
     Source VARCHAR(64),
@@ -16,10 +16,8 @@ CREATE TABLE TrainStatus
     General_Available INT,
     Premium_Occupied INT,
     General_Occupied INT,
-    CHECK(Premium_Available < 10),
-    CHECK(General_Available < 10),
-    CHECK(Premium_Occupied < 10),
-    CHECK(General_Occupied < 10),
+    CHECK(Premium_Available + Premium_Occupied == 10),
+    CHECK(General_Available + General_Occupied == 10),
     PRIMARY KEY(Train_Number, Train_Date),
     FOREIGN KEY (Train_Number) REFERENCES Train (Train_Number)
 );
@@ -34,7 +32,7 @@ CREATE TABLE Passenger
     County VARCHAR(64),
     City VARCHAR(64),
     Phone VARCHAR(10),
-    Birth_Date VARCHAR(64)
+    Age INT
 );
 
 
