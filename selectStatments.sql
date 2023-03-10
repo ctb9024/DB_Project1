@@ -16,3 +16,5 @@ from Train, Passenger, TrainStatus, Ticket
 where age = '-5'AND Train.Train_Number == TrainStatus.Train_Number;
 
 
+select Train.Train_Name , TrainStatus.Train_Date, Premium_Occupied + General_Occupied AS totalPassenger
+from Train ,TrainStatus;
