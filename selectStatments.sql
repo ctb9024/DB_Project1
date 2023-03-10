@@ -22,3 +22,18 @@ from Train ,TrainStatus;
 select First_Name, Last_Name
 from Passenger, Train, Ticket
 where Train_Name = 'Thomas' And Ticket_Status = 'Booked';
+
+select First_Name, Last_Name, Train_Name
+from Passenger, Train, Ticket
+where Ticket_Status = 'waitL';
+
+select First_Name, Last_Name
+from Passenger
+where Phone = '605'
+ORDER BY Phone DESC;
+
+
+select First_Name, Last_Name
+from Passenger,Ticket, Train
+where Ticket_Status = 'Booked' AND Days_Available = 'Thursday'
+ORDER BY First_Name,Last_Name ASC;
