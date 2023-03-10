@@ -18,3 +18,7 @@ where age = '-5'AND Train.Train_Number == TrainStatus.Train_Number;
 
 select Train.Train_Name , TrainStatus.Train_Date, Premium_Occupied + General_Occupied AS totalPassenger
 from Train ,TrainStatus;
+
+select First_Name, Last_Name
+from Passenger, Train, Ticket
+where Train_Name = 'Thomas' And Ticket_Status = 'Booked';
