@@ -10,6 +10,13 @@ This zip file is probably just a zip of the repository
 
 We read data from csv files included in this zip file
 
+
+Source Code for SELECT Statements is in selectStatements.sql
+
+Source Code for the CREATE statements is in createTables.sql
+
+ER Diagram is in Train_DB.pdf
+
 Contributions
 
 ER Diagram Christian Brown,
